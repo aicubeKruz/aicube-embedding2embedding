@@ -1,8 +1,8 @@
 """
 AICUBE Embedding2Embedding API - Main Application
 
-Aplicação principal da API para tradução de embeddings entre diferentes espaços vetoriais.
-Utiliza FastAPI com arquiteturas modulares e suporte a múltiplos modelos de tradução.
+Main application for the API for translating embeddings between different vector spaces.
+Uses FastAPI with modular architectures and support for multiple translation models.
 """
 
 from fastapi import FastAPI, HTTPException
@@ -21,48 +21,48 @@ from aicube_app.aicube_core.aicube_config import aicube_settings
 from aicube_app.aicube_core.aicube_model_manager import aicube_model_manager
 from aicube_app.aicube_core.aicube_logging import aicube_setup_logging
 
-# Configurar logging estruturado
+# Configure structured logging
 logger = structlog.get_logger("aicube.embedding2embedding.main")
 
 
 @asynccontextmanager
 async def aicube_lifespan(app: FastAPI):
     """
-    Lifecycle manager para inicialização e limpeza da aplicação AICUBE
+    Lifecycle manager for AICUBE application initialization and cleanup
     """
-    logger.info("Iniciando aplicação AICUBE Embedding2Embedding...")
+    logger.info("Starting AICUBE Embedding2Embedding application...")
     
-    # Inicializar logging
+    # Initialize logging
     aicube_setup_logging()
     
-    # Carregar modelos pré-treinados
+    # Load pre-trained models
     await aicube_model_manager.initialize_models()
     
-    logger.info("Aplicação AICUBE inicializada com sucesso", 
+    logger.info("AICUBE application initialized successfully", 
                 version=aicube_settings.API_VERSION,
                 models_loaded=len(aicube_model_manager.get_available_models()))
     
     yield
     
     # Cleanup
-    logger.info("Encerrando aplicação AICUBE Embedding2Embedding...")
+    logger.info("Shutting down AICUBE Embedding2Embedding application...")
     await aicube_model_manager.cleanup()
 
 
-# Criar aplicação FastAPI
+# Create FastAPI application
 aicube_app = FastAPI(
     title="AICUBE Embedding2Embedding API",
     description="""
-    API para tradução de embeddings entre diferentes espaços vetoriais de modelos de linguagem natural.
+    API for translating embeddings between different vector spaces of natural language models.
     
-    Desenvolvido pela AICUBE TECHNOLOGY utilizando:
+    Developed by AICUBE TECHNOLOGY using:
     - Qube LCM Model
     - Qube Neural Memory  
     - Qube Agentic Workflows
     - Qube Computer Vision
     
-    Esta API permite converter embeddings de um modelo de origem para um modelo de destino,
-    preservando o significado semântico através de técnicas avançadas de alinhamento de espaços vetoriais.
+    This API allows converting embeddings from a source model to a target model,
+    preserving semantic meaning through advanced vector space alignment techniques.
     """,
     version=aicube_settings.API_VERSION,
     docs_url="/aicube-docs",
@@ -71,7 +71,7 @@ aicube_app = FastAPI(
     lifespan=aicube_lifespan
 )
 
-# Configurar CORS
+# Configure CORS
 aicube_app.add_middleware(
     CORSMiddleware,
     allow_origins=aicube_settings.ALLOWED_ORIGINS,
@@ -80,14 +80,14 @@ aicube_app.add_middleware(
     allow_headers=["*"],
 )
 
-# Registrar routers
+# Register routers
 aicube_app.include_router(aicube_router, prefix="/api/v1")
 
 
 @aicube_app.get("/", tags=["Root"])
 async def aicube_root():
     """
-    Endpoint raiz da API AICUBE Embedding2Embedding
+    Root endpoint of the AICUBE Embedding2Embedding API
     """
     return {
         "message": "AICUBE Embedding2Embedding API",
@@ -107,17 +107,17 @@ async def aicube_root():
 @aicube_app.exception_handler(Exception)
 async def aicube_global_exception_handler(request, exc):
     """
-    Handler global para exceções não tratadas
+    Global handler for unhandled exceptions
     """
-    logger.error("Erro não tratado na aplicação AICUBE", 
+    logger.error("Unhandled error in AICUBE application", 
                 error=str(exc), 
                 path=str(request.url))
     
     return JSONResponse(
         status_code=500,
         content={
-            "error": "Erro interno do servidor AICUBE",
-            "message": "Por favor, entre em contato com o suporte técnico",
+            "error": "AICUBE internal server error",
+            "message": "Please contact technical support",
             "request_id": getattr(request.state, 'request_id', 'unknown')
         }
     )

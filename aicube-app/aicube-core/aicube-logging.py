@@ -1,7 +1,7 @@
 """
 AICUBE Embedding2Embedding API - Logging Configuration
 
-Sistema de logging estruturado utilizando structlog para monitoramento e auditoria.
+Structured logging system using structlog for monitoring and auditing.
 """
 
 import structlog

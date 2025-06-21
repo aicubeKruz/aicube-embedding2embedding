@@ -1,7 +1,7 @@
 """
 AICUBE Embedding2Embedding API - Configuration
 
-Configurações centralizadas da aplicação utilizando Pydantic Settings.
+Centralized application configuration using Pydantic Settings.
 """
 
 from pydantic_settings import BaseSettings
@@ -12,57 +12,57 @@ import os
 
 class AICUBESettings(BaseSettings):
     """
-    Configurações da aplicação AICUBE Embedding2Embedding
+    AICUBE Embedding2Embedding application settings
     """
     
-    # Informações da aplicação
+    # Application information
     API_NAME: str = "aicube-embedding2embedding"
     API_VERSION: str = "v1"
-    ENVIRONMENT: str = Field(default="development", description="Ambiente de execução")
-    DEBUG: bool = Field(default=True, description="Modo debug")
+    ENVIRONMENT: str = Field(default="development", description="Execution environment")
+    DEBUG: bool = Field(default=True, description="Debug mode")
     
-    # Configurações de servidor
-    HOST: str = Field(default="0.0.0.0", description="Host do servidor")
-    PORT: int = Field(default=8000, description="Porta do servidor")
+    # Server settings
+    HOST: str = Field(default="0.0.0.0", description="Server host")
+    PORT: int = Field(default=8000, description="Server port")
     
-    # Configurações de logging
-    LOG_LEVEL: str = Field(default="INFO", description="Nível de logging")
-    LOG_FORMAT: str = Field(default="json", description="Formato de logging")
-    LOG_FILE: Optional[str] = Field(default=None, description="Arquivo de log")
+    # Logging settings
+    LOG_LEVEL: str = Field(default="INFO", description="Logging level")
+    LOG_FORMAT: str = Field(default="json", description="Logging format")
+    LOG_FILE: Optional[str] = Field(default=None, description="Log file")
     
-    # Configurações de CORS
+    # CORS settings
     ALLOWED_ORIGINS: List[str] = Field(
         default=["http://localhost:3000", "http://localhost:8080"],
-        description="Origens permitidas para CORS"
+        description="Allowed origins for CORS"
     )
     
-    # Configurações de modelos
-    MODELS_PATH: str = Field(default="./aicube-models", description="Diretório dos modelos")
-    MAX_EMBEDDING_DIMENSION: int = Field(default=4096, description="Dimensão máxima de embedding")
-    MAX_BATCH_SIZE: int = Field(default=32, description="Tamanho máximo de batch")
+    # Model settings
+    MODELS_PATH: str = Field(default="./aicube-models", description="Models directory")
+    MAX_EMBEDDING_DIMENSION: int = Field(default=4096, description="Maximum embedding dimension")
+    MAX_BATCH_SIZE: int = Field(default=32, description="Maximum batch size")
     
-    # Configurações de performance
-    DEVICE: str = Field(default="cpu", description="Dispositivo de processamento (cpu/cuda)")
-    MAX_WORKERS: int = Field(default=4, description="Número máximo de workers")
+    # Performance settings
+    DEVICE: str = Field(default="cpu", description="Processing device (cpu/cuda)")
+    MAX_WORKERS: int = Field(default=4, description="Maximum number of workers")
     
-    # Rate limiting (para implementação futura)
-    RATE_LIMIT_REQUESTS: int = Field(default=100, description="Limite de requisições por minuto")
-    RATE_LIMIT_WINDOW: int = Field(default=60, description="Janela de tempo em segundos")
+    # Rate limiting (for future implementation)
+    RATE_LIMIT_REQUESTS: int = Field(default=100, description="Request limit per minute")
+    RATE_LIMIT_WINDOW: int = Field(default=60, description="Time window in seconds")
     
-    # Configurações de cache
-    ENABLE_MODEL_CACHE: bool = Field(default=True, description="Habilitar cache de modelos")
-    CACHE_TTL: int = Field(default=3600, description="TTL do cache em segundos")
+    # Cache settings
+    ENABLE_MODEL_CACHE: bool = Field(default=True, description="Enable model caching")
+    CACHE_TTL: int = Field(default=3600, description="Cache TTL in seconds")
     
-    # Configurações de monitoramento
-    ENABLE_METRICS: bool = Field(default=True, description="Habilitar métricas Prometheus")
-    METRICS_PORT: int = Field(default=8001, description="Porta das métricas")
+    # Monitoring settings
+    ENABLE_METRICS: bool = Field(default=True, description="Enable Prometheus metrics")
+    METRICS_PORT: int = Field(default=8001, description="Metrics port")
     
-    # Configurações de timeouts
-    REQUEST_TIMEOUT: int = Field(default=30, description="Timeout de requisição em segundos")
-    MODEL_LOAD_TIMEOUT: int = Field(default=120, description="Timeout para carregamento de modelo")
+    # Timeout settings
+    REQUEST_TIMEOUT: int = Field(default=30, description="Request timeout in seconds")
+    MODEL_LOAD_TIMEOUT: int = Field(default=120, description="Model loading timeout")
     
-    # Configurações específicas AICUBE
-    AICUBE_TECHNOLOGY_NAME: str = Field(default="AICUBE TECHNOLOGY", description="Nome da tecnologia")
+    # AICUBE specific settings
+    AICUBE_TECHNOLOGY_NAME: str = Field(default="AICUBE TECHNOLOGY", description="Technology name")
     AICUBE_MODELS: List[str] = Field(
         default=[
             "Qube LCM Model",
@@ -70,7 +70,7 @@ class AICUBESettings(BaseSettings):
             "Qube Agentic Workflows",
             "Qube Computer Vision"
         ],
-        description="Modelos AICUBE utilizados"
+        description="AICUBE models used"
     )
     
     class Config:
@@ -79,12 +79,12 @@ class AICUBESettings(BaseSettings):
         case_sensitive = True
 
 
-# Instância global das configurações
+# Global settings instance
 aicube_settings = AICUBESettings()
 
 
 def get_aicube_settings() -> AICUBESettings:
     """
-    Função para obter as configurações AICUBE (útil para dependency injection)
+    Function to get AICUBE settings (useful for dependency injection)
     """
     return aicube_settings
