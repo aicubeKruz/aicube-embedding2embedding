@@ -1,0 +1,57 @@
+{
+  "aicube_version": "1.0.0-aicube",
+  "created_by": "AICUBE TECHNOLOGY",
+  "aicube_technologies": [
+    "Qube LCM Model",
+    "Qube Neural Memory", 
+    "Qube Agentic Workflows",
+    "Qube Computer Vision"
+  ],
+  "aicube_models": [
+    {
+      "model_id": "aicube-bert-to-t5",
+      "source_model": "bert_base_uncased",
+      "target_model": "t5_base",
+      "source_dimension": 768,
+      "target_dimension": 768,
+      "version": "1.0.0-aicube",
+      "description": "Tradutor AICUBE BERT para T5 usando Qube LCM Model"
+    },
+    {
+      "model_id": "aicube-mpnet-to-ada002",
+      "source_model": "sentence_transformers_mpnet",
+      "target_model": "openai_ada002", 
+      "source_dimension": 768,
+      "target_dimension": 1536,
+      "version": "1.0.0-aicube",
+      "description": "Tradutor AICUBE MPNet para OpenAI Ada-002 usando Qube Neural Memory"
+    },
+    {
+      "model_id": "aicube-roberta-to-gpt2",
+      "source_model": "roberta_base",
+      "target_model": "gpt2_base",
+      "source_dimension": 768,
+      "target_dimension": 768,
+      "version": "1.0.0-aicube", 
+      "description": "Tradutor AICUBE RoBERTa para GPT-2 usando Qube Agentic Workflows"
+    },
+    {
+      "model_id": "aicube-t5-to-bert",
+      "source_model": "t5_base",
+      "target_model": "bert_base_uncased",
+      "source_dimension": 768,
+      "target_dimension": 768,
+      "version": "1.0.0-aicube",
+      "description": "Tradutor AICUBE T5 para BERT usando Qube Computer Vision"
+    },
+    {
+      "model_id": "aicube-universal-translator",
+      "source_model": "universal_sentence_encoder",
+      "target_model": "multilingual_bert",
+      "source_dimension": 512,
+      "target_dimension": 768,
+      "version": "1.0.0-aicube",
+      "description": "Tradutor AICUBE Universal para Multilingual BERT usando todas as tecnologias Qube"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  aicube-embedding2embedding:
+    build:
+      context: .
+      dockerfile: aicube-Dockerfile
+    container_name: aicube-embedding2embedding-container
+    ports:
+      - "8000:8000"
+    environment:
+      - ENVIRONMENT=development
+      - LOG_LEVEL=INFO
+      - API_VERSION=v1
+      - AICUBE_API_NAME=aicube-embedding2embedding
+    volumes:
+      - ./aicube-models:/aicube-app/aicube-models:ro
+      - ./aicube-configs:/aicube-app/aicube-configs:ro
+      - ./aicube-logs:/aicube-app/aicube-logs
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/api/v1/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    networks:
+      - aicube-network
+
+networks:
+  aicube-network:
+    driver: bridge
+    name: aicube-embedding2embedding-network
