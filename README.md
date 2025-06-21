@@ -1,6 +1,6 @@
 # AICUBE Embedding2Embedding API
 
-[![GitHub](https://img.shields.io/github/license/aicubeKruz/aicube-embedding2embedding?style=flat-square&logo=github)](https://github.com/aicubeKruz/aicube-embedding2embedding)
+[![License](https://img.shields.io/badge/License-MIT%20(Non--Commercial)-blue?style=flat-square)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.11+-blue?style=flat-square&logo=python)](https://python.org)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.104+-green?style=flat-square&logo=fastapi)](https://fastapi.tiangolo.com)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.1+-red?style=flat-square&logo=pytorch)](https://pytorch.org)
@@ -331,9 +331,26 @@ To report bugs or request features, use the issue system with tags:
 5. Submit pull request
 
 ### License
-This project is proprietary to **AICUBE TECHNOLOGY LLC** and uses advanced open-source technologies.
+This project is licensed under the MIT License for Non-Commercial Use only.
+
+**Copyright (c) 2024 AICUBE TECHNOLOGY LLC**
+
+✅ **Permitted (Non-Commercial)**:
+- Personal use and learning
+- Academic research and education  
+- Open source contributions
+- Non-profit organizations
+
+❌ **Prohibited (Commercial)**:
+- Selling or monetizing the software
+- Commercial products or services
+- Revenue-generating activities
+
+For commercial licensing, contact: contact@aicube.technology
+
+See [LICENSE](LICENSE) file for full terms.
 
 ---
 
-**Developed by AICUBE TECHNOLOGY LLC LLC**  
+**Developed by AICUBE TECHNOLOGY LLC**  
 Powered by FastAPI, PyTorch, MLP Neural Networks, and Advanced ML Algorithms

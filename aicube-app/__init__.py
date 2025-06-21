@@ -10,4 +10,6 @@ MLP Neural Networks, and Advanced ML Algorithms.
 __version__ = "1.0.0-aicube"
 __author__ = "AICUBE TECHNOLOGY LLC"
 __email__ = "contact@aicube.technology"
-__description__ = "API para tradução de embeddings entre espaços vetoriais"
+__license__ = "MIT License (Non-Commercial Use)"
+__description__ = "API for embedding translation between vector spaces"
+__copyright__ = "Copyright (c) 2024 AICUBE TECHNOLOGY LLC"

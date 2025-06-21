@@ -100,7 +100,9 @@ async def aicube_root():
             "Advanced ML Algorithms"
         ],
         "docs": "/aicube-docs",
-        "health": "/api/v1/health"
+        "health": "/api/v1/health",
+        "license": "MIT License (Non-Commercial Use)",
+        "copyright": "Copyright (c) 2024 AICUBE TECHNOLOGY LLC"
     }
 
 
