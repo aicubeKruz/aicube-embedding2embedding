@@ -1,5 +1,12 @@
 # AICUBE Embedding2Embedding API
 
+[![GitHub](https://img.shields.io/github/license/aicubeKruz/aicube-embedding2embedding?style=flat-square&logo=github)](https://github.com/aicubeKruz/aicube-embedding2embedding)
+[![Python](https://img.shields.io/badge/Python-3.11+-blue?style=flat-square&logo=python)](https://python.org)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.104+-green?style=flat-square&logo=fastapi)](https://fastapi.tiangolo.com)
+[![PyTorch](https://img.shields.io/badge/PyTorch-2.1+-red?style=flat-square&logo=pytorch)](https://pytorch.org)
+[![Docker](https://img.shields.io/badge/Docker-Ready-blue?style=flat-square&logo=docker)](https://docker.com)
+[![AICUBE](https://img.shields.io/badge/AICUBE-TECHNOLOGY-purple?style=flat-square)](https://aicube.technology)
+
 ## Visão Geral
 
 A **AICUBE Embedding2Embedding API** é um serviço desenvolvido pela **AICUBE TECHNOLOGY** que permite traduzir embeddings entre diferentes espaços vetoriais de modelos de linguagem natural. Utilizando tecnologias avançadas como **Qube LCM Model**, **Qube Neural Memory**, **Qube Agentic Workflows** e **Qube Computer Vision**, a API preserva o significado semântico durante a conversão.
