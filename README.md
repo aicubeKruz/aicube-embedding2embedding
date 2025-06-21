@@ -346,7 +346,7 @@ This project is licensed under the MIT License for Non-Commercial Use only.
 - Commercial products or services
 - Revenue-generating activities
 
-For commercial licensing, contact: contact@aicube.technology
+For commercial licensing, contact: contact@aicube.ca
 
 See [LICENSE](LICENSE) file for full terms.
 
