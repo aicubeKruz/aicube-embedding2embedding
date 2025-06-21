@@ -351,6 +351,6 @@ async def aicube_http_exception_handler(request, exc: HTTPException):
             "message": exc.detail,
             "aicube_service": aicube_settings.API_NAME,
             "timestamp": datetime.utcnow().isoformat(),
-            "aicube_technology": "AICUBE TECHNOLOGY"
+            "aicube_technology": "AICUBE TECHNOLOGY LLC"
         }
     )

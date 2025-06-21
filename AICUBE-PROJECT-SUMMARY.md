@@ -2,7 +2,7 @@
 
 ## Visão Geral Executiva
 
-O projeto **AICUBE Embedding2Embedding API** foi desenvolvido pela **AICUBE TECHNOLOGY** como uma solução completa para tradução de embeddings entre diferentes espaços vetoriais de modelos de linguagem natural. A implementação utiliza tecnologias proprietárias avançadas e segue as especificações técnicas e funcionais fornecidas.
+O projeto **AICUBE Embedding2Embedding API** foi desenvolvido pela **AICUBE TECHNOLOGY LLC** como uma solução completa para tradução de embeddings entre diferentes espaços vetoriais de modelos de linguagem natural. A implementação utiliza tecnologias proprietárias avançadas e segue as especificações técnicas e funcionais fornecidas.
 
 ## Tecnologias AICUBE Implementadas
 
@@ -149,7 +149,7 @@ aicube-embedding2embedding/
 # Logging estruturado com contexto AICUBE
 {
   "aicube_service": "aicube-embedding2embedding",
-  "aicube_technology": "AICUBE TECHNOLOGY",
+  "aicube_technology": "AICUBE TECHNOLOGY LLC",
   "aicube_version": "1.0.0-aicube",
   "powered_by": ["Qube LCM Model", "Qube Neural Memory"]
 }
@@ -301,7 +301,7 @@ O projeto **AICUBE Embedding2Embedding API** foi implementado com sucesso, atend
 - **Escalabilidade**: Preparado para crescimento e evolução
 - **Usabilidade**: API intuitiva com documentação completa
 
-A implementação estabelece uma base sólida para os casos de uso identificados nos setores financeiro, seguros, varejo e jurídico, posicionando a **AICUBE TECHNOLOGY** como líder em soluções de tradução de embeddings.
+A implementação estabelece uma base sólida para os casos de uso identificados nos setores financeiro, seguros, varejo e jurídico, posicionando a **AICUBE TECHNOLOGY LLC** como líder em soluções de tradução de embeddings.
 
 ---
 

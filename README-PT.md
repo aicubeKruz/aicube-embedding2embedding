@@ -9,7 +9,7 @@
 
 ## Visão Geral
 
-A **AICUBE Embedding2Embedding API** é um serviço desenvolvido pela **AICUBE TECHNOLOGY** que permite traduzir embeddings entre diferentes espaços vetoriais de modelos de linguagem natural. Utilizando tecnologias avançadas como **Qube LCM Model**, **Qube Neural Memory**, **Qube Agentic Workflows** e **Qube Computer Vision**, a API preserva o significado semântico durante a conversão.
+A **AICUBE Embedding2Embedding API** é um serviço desenvolvido pela **AICUBE TECHNOLOGY LLC** que permite traduzir embeddings entre diferentes espaços vetoriais de modelos de linguagem natural. Utilizando tecnologias avançadas como **Qube LCM Model**, **Qube Neural Memory**, **Qube Agentic Workflows** e **Qube Computer Vision**, a API preserva o significado semântico durante a conversão.
 
 ## Tecnologias AICUBE Utilizadas
 
@@ -107,7 +107,7 @@ Content-Type: application/json
   "origem": "bert_base_uncased",
   "destino": "t5_base",
   "embedding_traduzido": [0.08, 0.33, -0.10, 0.71, -0.15],
-  "aicube_technology": "AICUBE TECHNOLOGY",
+  "aicube_technology": "AICUBE TECHNOLOGY LLC",
   "metadata": {
     "aicube_model_id": "aicube-bert-to-t5",
     "duration_ms": 15.2,
@@ -208,7 +208,7 @@ O sistema utiliza logging estruturado com contexto AICUBE:
   "level": "info",
   "message": "AICUBE Embedding Translation",
   "aicube_service": "aicube-embedding2embedding",
-  "aicube_technology": "AICUBE TECHNOLOGY",
+  "aicube_technology": "AICUBE TECHNOLOGY LLC",
   "source_model": "bert_base_uncased",
   "target_model": "t5_base",
   "duration_ms": 15.2,
@@ -329,7 +329,7 @@ Para reportar bugs ou solicitar funcionalidades, use o sistema de issues com as 
 5. Submeta pull request
 
 ### Licença
-Este projeto é propriedade da **AICUBE TECHNOLOGY** e utiliza tecnologias proprietárias.
+Este projeto é propriedade da **AICUBE TECHNOLOGY LLC** e utiliza tecnologias proprietárias.
 
 ---
 

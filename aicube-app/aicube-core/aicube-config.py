@@ -62,7 +62,7 @@ class AICUBESettings(BaseSettings):
     MODEL_LOAD_TIMEOUT: int = Field(default=120, description="Model loading timeout")
     
     # AICUBE specific settings
-    AICUBE_TECHNOLOGY_NAME: str = Field(default="AICUBE TECHNOLOGY", description="Technology name")
+    AICUBE_TECHNOLOGY_NAME: str = Field(default="AICUBE TECHNOLOGY LLC", description="Technology name")
     AICUBE_MODELS: List[str] = Field(
         default=[
             "FastAPI Framework",

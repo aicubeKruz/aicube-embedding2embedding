@@ -270,5 +270,5 @@ The AICUBE Embedding2Embedding project has been fully developed following all pr
 
 ---
 
-**Developed by AICUBE TECHNOLOGY**  
+**Developed by AICUBE TECHNOLOGY LLC**  
 *Powered by FastAPI Framework, PyTorch Deep Learning, MLP Neural Networks, and Advanced ML Algorithms*

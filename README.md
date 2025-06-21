@@ -9,7 +9,7 @@
 
 ## Overview
 
-The **AICUBE Embedding2Embedding API** is a service developed by **AICUBE TECHNOLOGY** that enables translation of embeddings between different vector spaces of natural language models. The API preserves semantic meaning during conversion using advanced neural network architectures and machine learning techniques.
+The **AICUBE Embedding2Embedding API** is a service developed by **AICUBE TECHNOLOGY LLC** that enables translation of embeddings between different vector spaces of natural language models. The API preserves semantic meaning during conversion using advanced neural network architectures and machine learning techniques.
 
 ## Technologies Used
 
@@ -109,7 +109,7 @@ Content-Type: application/json
   "origem": "bert_base_uncased",
   "destino": "t5_base",
   "embedding_traduzido": [0.08, 0.33, -0.10, 0.71, -0.15],
-  "aicube_technology": "AICUBE TECHNOLOGY",
+  "aicube_technology": "AICUBE TECHNOLOGY LLC",
   "metadata": {
     "aicube_model_id": "aicube-bert-to-t5",
     "duration_ms": 15.2,
@@ -210,7 +210,7 @@ The system uses structured logging with AICUBE context:
   "level": "info",
   "message": "AICUBE Embedding Translation",
   "aicube_service": "aicube-embedding2embedding",
-  "aicube_technology": "AICUBE TECHNOLOGY",
+  "aicube_technology": "AICUBE TECHNOLOGY LLC",
   "source_model": "bert_base_uncased",
   "target_model": "t5_base",
   "duration_ms": 15.2,
@@ -331,9 +331,9 @@ To report bugs or request features, use the issue system with tags:
 5. Submit pull request
 
 ### License
-This project is proprietary to **AICUBE TECHNOLOGY** and uses proprietary technologies.
+This project is proprietary to **AICUBE TECHNOLOGY LLC** and uses advanced open-source technologies.
 
 ---
 
-**Developed by AICUBE TECHNOLOGY**  
-Powered by Qube LCM Model, Qube Neural Memory, Qube Agentic Workflows, and Qube Computer Vision
+**Developed by AICUBE TECHNOLOGY LLC LLC**  
+Powered by FastAPI, PyTorch, MLP Neural Networks, and Advanced ML Algorithms

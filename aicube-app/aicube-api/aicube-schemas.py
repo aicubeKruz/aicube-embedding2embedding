@@ -73,7 +73,7 @@ class AICUBEEmbeddingTranslateResponse(BaseModel):
         ..., 
         description="Embedding(s) traduzido(s)"
     )
-    aicube_technology: str = Field(default="AICUBE TECHNOLOGY", description="Tecnologia utilizada")
+    aicube_technology: str = Field(default="AICUBE TECHNOLOGY LLC", description="Tecnologia utilizada")
     metadata: Optional[Dict[str, Any]] = Field(default=None, description="Metadados da tradução")
     
     class Config:
@@ -82,7 +82,7 @@ class AICUBEEmbeddingTranslateResponse(BaseModel):
                 "origem": "bert_base_uncased",
                 "destino": "t5_base",
                 "embedding_traduzido": [0.08, 0.33, -0.10, 0.71, -0.15],
-                "aicube_technology": "AICUBE TECHNOLOGY",
+                "aicube_technology": "AICUBE TECHNOLOGY LLC",
                 "metadata": {
                     "aicube_model_id": "aicube-bert-to-t5",
                     "duration_ms": 15.2,
@@ -105,7 +105,7 @@ class AICUBEModelInfo(BaseModel):
     version: str = Field(..., description="Versão do modelo")
     description: str = Field(..., description="Descrição do modelo")
     aicube_technology: List[str] = Field(..., description="Tecnologias AICUBE utilizadas")
-    created_by: str = Field(default="AICUBE TECHNOLOGY", description="Criado por")
+    created_by: str = Field(default="AICUBE TECHNOLOGY LLC", description="Criado por")
 
 
 class AICUBEModelsListResponse(BaseModel):
@@ -115,7 +115,7 @@ class AICUBEModelsListResponse(BaseModel):
     aicube_models: List[str] = Field(..., description="Lista de modelos disponíveis")
     aicube_model_pairs: List[Dict[str, str]] = Field(..., description="Pares de modelos suportados")
     total_models: int = Field(..., description="Total de modelos disponíveis")
-    aicube_technology: str = Field(default="AICUBE TECHNOLOGY", description="Tecnologia")
+    aicube_technology: str = Field(default="AICUBE TECHNOLOGY LLC", description="Tecnologia")
     powered_by: List[str] = Field(..., description="Tecnologias AICUBE utilizadas")
     
     class Config:
@@ -130,7 +130,7 @@ class AICUBEModelsListResponse(BaseModel):
                     }
                 ],
                 "total_models": 2,
-                "aicube_technology": "AICUBE TECHNOLOGY",
+                "aicube_technology": "AICUBE TECHNOLOGY LLC",
                 "powered_by": ["Qube LCM Model", "Qube Neural Memory", "Qube Agentic Workflows", "Qube Computer Vision"]
             }
         }
@@ -144,7 +144,7 @@ class AICUBEHealthResponse(BaseModel):
     aicube_service: str = Field(..., description="Nome do serviço AICUBE")
     version: str = Field(..., description="Versão da API")
     timestamp: datetime = Field(default_factory=datetime.utcnow, description="Timestamp da verificação")
-    aicube_technology: str = Field(default="AICUBE TECHNOLOGY", description="Tecnologia")
+    aicube_technology: str = Field(default="AICUBE TECHNOLOGY LLC", description="Tecnologia")
     models_loaded: int = Field(..., description="Número de modelos carregados")
     powered_by: List[str] = Field(..., description="Tecnologias AICUBE utilizadas")
     
@@ -155,7 +155,7 @@ class AICUBEHealthResponse(BaseModel):
                 "aicube_service": "aicube-embedding2embedding",
                 "version": "v1",
                 "timestamp": "2023-06-19T12:00:00Z",
-                "aicube_technology": "AICUBE TECHNOLOGY",
+                "aicube_technology": "AICUBE TECHNOLOGY LLC",
                 "models_loaded": 3,
                 "powered_by": ["Qube LCM Model", "Qube Neural Memory", "Qube Agentic Workflows", "Qube Computer Vision"]
             }
@@ -229,7 +229,7 @@ class AICUBEBatchTranslateResponse(BaseModel):
     destino: str = Field(..., description="Modelo de destino")
     embeddings_traduzidos: List[List[float]] = Field(..., description="Lista de embeddings traduzidos")
     batch_size: int = Field(..., description="Tamanho do batch processado")
-    aicube_technology: str = Field(default="AICUBE TECHNOLOGY", description="Tecnologia utilizada")
+    aicube_technology: str = Field(default="AICUBE TECHNOLOGY LLC", description="Tecnologia utilizada")
     metadata: Optional[Dict[str, Any]] = Field(default=None, description="Metadados da tradução em lote")
     
     class Config:
@@ -242,7 +242,7 @@ class AICUBEBatchTranslateResponse(BaseModel):
                     [0.71, -0.15, 0.42]
                 ],
                 "batch_size": 2,
-                "aicube_technology": "AICUBE TECHNOLOGY",
+                "aicube_technology": "AICUBE TECHNOLOGY LLC",
                 "metadata": {
                     "total_duration_ms": 25.6,
                     "average_cosine_similarity": 0.93
@@ -258,7 +258,7 @@ class AICUBEStatisticsResponse(BaseModel):
     aicube_loaded_models: int = Field(..., description="Modelos carregados")
     aicube_available_models: int = Field(..., description="Modelos disponíveis")
     aicube_usage_stats: Dict[str, int] = Field(..., description="Estatísticas de uso por modelo")
-    aicube_technology: str = Field(default="AICUBE TECHNOLOGY", description="Tecnologia")
+    aicube_technology: str = Field(default="AICUBE TECHNOLOGY LLC", description="Tecnologia")
     aicube_version: str = Field(..., description="Versão AICUBE")
     powered_by: List[str] = Field(..., description="Tecnologias utilizadas")
     
@@ -271,7 +271,7 @@ class AICUBEStatisticsResponse(BaseModel):
                     "aicube-bert-to-t5": 150,
                     "aicube-mpnet-to-ada002": 89
                 },
-                "aicube_technology": "AICUBE TECHNOLOGY",
+                "aicube_technology": "AICUBE TECHNOLOGY LLC",
                 "aicube_version": "1.0.0-aicube",
                 "powered_by": ["Qube LCM Model", "Qube Neural Memory"]
             }

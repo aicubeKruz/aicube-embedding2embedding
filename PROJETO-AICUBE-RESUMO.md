@@ -2,7 +2,7 @@
 
 ## 📋 Visão Geral do Projeto
 
-O **AICUBE Embedding2Embedding** é uma API completa desenvolvida pela **AICUBE TECHNOLOGY** para tradução de embeddings entre diferentes espaços vetoriais de modelos de linguagem natural. O projeto implementa todas as especificações técnicas e funcionais solicitadas, utilizando tecnologias avançadas como **Qube LCM Model**, **Qube Neural Memory**, **Qube Agentic Workflows** e **Qube Computer Vision**.
+O **AICUBE Embedding2Embedding** é uma API completa desenvolvida pela **AICUBE TECHNOLOGY LLC** para tradução de embeddings entre diferentes espaços vetoriais de modelos de linguagem natural. O projeto implementa todas as especificações técnicas e funcionais solicitadas, utilizando tecnologias avançadas como **Qube LCM Model**, **Qube Neural Memory**, **Qube Agentic Workflows** e **Qube Computer Vision**.
 
 ## 🚀 Funcionalidades Implementadas
 

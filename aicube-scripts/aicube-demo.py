@@ -333,7 +333,7 @@ def demo_statistics(client: AICUBEEmbeddingClient):
 def run_comprehensive_demo(base_url: str):
     """Executar demonstração completa"""
     print_header("AICUBE Embedding2Embedding API - Demo Completa")
-    print("Desenvolvido pela AICUBE TECHNOLOGY")
+    print("Desenvolvido pela AICUBE TECHNOLOGY LLC")
     print("Powered by: Qube LCM Model, Qube Neural Memory, Qube Agentic Workflows, Qube Computer Vision")
     
     # Inicializar cliente

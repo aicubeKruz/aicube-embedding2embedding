@@ -101,5 +101,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-**Developed by AICUBE TECHNOLOGY**  
+**Developed by AICUBE TECHNOLOGY LLC**  
 *Powered by Qube LCM Model, Qube Neural Memory, Qube Agentic Workflows, and Qube Computer Vision*

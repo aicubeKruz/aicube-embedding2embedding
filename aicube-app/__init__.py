@@ -3,11 +3,11 @@
 AICUBE Embedding2Embedding API
 
 API para tradução de embeddings entre diferentes espaços vetoriais de modelos de linguagem natural.
-Desenvolvido pela AICUBE TECHNOLOGY utilizando Qube LCM Model, Qube Neural Memory, 
-Qube Agentic Workflows e Qube Computer Vision.
+Developed by AICUBE TECHNOLOGY LLC using FastAPI, PyTorch, 
+MLP Neural Networks, and Advanced ML Algorithms.
 """
 
 __version__ = "1.0.0-aicube"
-__author__ = "AICUBE TECHNOLOGY"
+__author__ = "AICUBE TECHNOLOGY LLC"
 __email__ = "contact@aicube.technology"
 __description__ = "API para tradução de embeddings entre espaços vetoriais"

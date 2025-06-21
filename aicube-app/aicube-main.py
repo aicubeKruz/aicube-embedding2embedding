@@ -55,7 +55,7 @@ aicube_app = FastAPI(
     description="""
     API for translating embeddings between different vector spaces of natural language models.
     
-    Developed by AICUBE TECHNOLOGY using:
+    Developed by AICUBE TECHNOLOGY LLC LLC using:
     - FastAPI framework for high-performance REST API
     - PyTorch for deep learning model implementation
     - MLP architecture with residual connections
@@ -92,7 +92,7 @@ async def aicube_root():
     return {
         "message": "AICUBE Embedding2Embedding API",
         "version": aicube_settings.API_VERSION,
-        "technology": "AICUBE TECHNOLOGY",
+        "technology": "AICUBE TECHNOLOGY LLC",
         "powered_by": [
             "FastAPI",
             "PyTorch", 

@@ -104,7 +104,7 @@ class TestAICUBEModelsEndpoints:
         mock_model_info.version = "1.0.0-aicube"
         mock_model_info.description = "Test model"
         mock_model_info.aicube_technology = ["Qube LCM Model"]
-        mock_model_info.created_by = "AICUBE TECHNOLOGY"
+        mock_model_info.created_by = "AICUBE TECHNOLOGY LLC"
         
         mock_get_info.return_value = mock_model_info
         
@@ -116,7 +116,7 @@ class TestAICUBEModelsEndpoints:
         assert data["model_id"] == "aicube-test-model"
         assert data["source_model"] == "bert_base"
         assert data["target_model"] == "t5_base"
-        assert data["created_by"] == "AICUBE TECHNOLOGY"
+        assert data["created_by"] == "AICUBE TECHNOLOGY LLC"
     
     @patch('aicube_app.aicube_core.aicube_model_manager.aicube_model_manager.aicube_get_model_info')
     def test_aicube_get_model_info_not_found(self, mock_get_info, aicube_client):
@@ -277,7 +277,7 @@ class TestAICUBEStatisticsEndpoint:
             "aicube_loaded_models": 3,
             "aicube_available_models": 5,
             "aicube_usage_stats": {"aicube-bert-to-t5": 150},
-            "aicube_technology": "AICUBE TECHNOLOGY",
+            "aicube_technology": "AICUBE TECHNOLOGY LLC",
             "aicube_version": "1.0.0-aicube",
             "aicube_powered_by": ["Qube LCM Model"]
         }
@@ -290,7 +290,7 @@ class TestAICUBEStatisticsEndpoint:
         
         assert data["aicube_loaded_models"] == 3
         assert data["aicube_available_models"] == 5
-        assert data["aicube_technology"] == "AICUBE TECHNOLOGY"
+        assert data["aicube_technology"] == "AICUBE TECHNOLOGY LLC"
         assert "aicube_usage_stats" in data
 
 
@@ -306,7 +306,7 @@ class TestAICUBERootEndpoint:
         
         assert data["message"] == "AICUBE Embedding2Embedding API"
         assert data["version"] == aicube_settings.API_VERSION
-        assert data["technology"] == "AICUBE TECHNOLOGY"
+        assert data["technology"] == "AICUBE TECHNOLOGY LLC"
         assert "powered_by" in data
         assert "Qube LCM Model" in data["powered_by"]
         assert "docs" in data

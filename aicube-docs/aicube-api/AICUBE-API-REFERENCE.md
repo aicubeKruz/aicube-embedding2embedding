@@ -2,7 +2,7 @@
 
 ## Visão Geral
 
-A **AICUBE Embedding2Embedding API** fornece endpoints RESTful para tradução de embeddings entre diferentes espaços vetoriais. Desenvolvida pela **AICUBE TECHNOLOGY** utilizando tecnologias avançadas.
+A **AICUBE Embedding2Embedding API** fornece endpoints RESTful para tradução de embeddings entre diferentes espaços vetoriais. Desenvolvida pela **AICUBE TECHNOLOGY LLC** utilizando tecnologias avançadas.
 
 ## Base URL
 
@@ -38,7 +38,7 @@ Verifica o status de saúde do serviço AICUBE.
   "aicube_service": "aicube-embedding2embedding",
   "version": "v1",
   "timestamp": "2023-06-19T12:00:00Z",
-  "aicube_technology": "AICUBE TECHNOLOGY",
+  "aicube_technology": "AICUBE TECHNOLOGY LLC",
   "models_loaded": 3,
   "powered_by": [
     "Qube LCM Model",
@@ -83,7 +83,7 @@ Traduz um embedding de um modelo de origem para um modelo de destino.
   "origem": "bert_base_uncased",
   "destino": "t5_base",
   "embedding_traduzido": [0.08, 0.33, -0.10, 0.71, -0.15],
-  "aicube_technology": "AICUBE TECHNOLOGY",
+  "aicube_technology": "AICUBE TECHNOLOGY LLC",
   "metadata": {
     "aicube_model_id": "aicube-bert-to-t5",
     "duration_ms": 15.2,
@@ -138,7 +138,7 @@ Traduz múltiplos embeddings de uma vez.
     [0.71, -0.15, 0.42]
   ],
   "batch_size": 2,
-  "aicube_technology": "AICUBE TECHNOLOGY",
+  "aicube_technology": "AICUBE TECHNOLOGY LLC",
   "metadata": {
     "total_duration_ms": 25.6,
     "average_cosine_similarity": 0.93
@@ -175,7 +175,7 @@ Retorna lista de modelos de tradução disponíveis.
     }
   ],
   "total_models": 3,
-  "aicube_technology": "AICUBE TECHNOLOGY",
+  "aicube_technology": "AICUBE TECHNOLOGY LLC",
   "powered_by": [
     "Qube LCM Model",
     "Qube Neural Memory",
@@ -207,7 +207,7 @@ Retorna informações detalhadas de um modelo específico.
   "version": "1.0.0-aicube",
   "description": "Tradutor AICUBE BERT para T5 usando Qube LCM Model",
   "aicube_technology": ["Qube LCM Model"],
-  "created_by": "AICUBE TECHNOLOGY"
+  "created_by": "AICUBE TECHNOLOGY LLC"
 }
 ```
 
@@ -232,7 +232,7 @@ Retorna estatísticas de uso dos modelos.
     "aicube-bert-to-t5": 150,
     "aicube-mpnet-to-ada002": 89
   },
-  "aicube_technology": "AICUBE TECHNOLOGY",
+  "aicube_technology": "AICUBE TECHNOLOGY LLC",
   "aicube_version": "1.0.0-aicube",
   "powered_by": ["Qube LCM Model", "Qube Neural Memory"]
 }

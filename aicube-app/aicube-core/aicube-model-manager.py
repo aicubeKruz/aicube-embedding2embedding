@@ -33,7 +33,7 @@ class AICUBEModelInfo:
     target_dimension: int
     version: str
     description: str
-    created_by: str = "AICUBE TECHNOLOGY"
+    created_by: str = "AICUBE TECHNOLOGY LLC"
     aicube_technology: List[str] = None
     
     def __post_init__(self):
@@ -120,7 +120,7 @@ class AICUBEModelManager:
         """
         aicube_default_config = {
             "aicube_version": "1.0.0-aicube",
-            "created_by": "AICUBE TECHNOLOGY",
+            "created_by": "AICUBE TECHNOLOGY LLC",
             "aicube_technologies": aicube_settings.AICUBE_MODELS,
             "aicube_models": [
                 {
@@ -323,7 +323,7 @@ class AICUBEModelManager:
             "cosine_similarity": cosine_sim,
             "source_dimension": embedding.shape[-1],
             "target_dimension": translated_embedding.shape[-1],
-            "aicube_technology": "AICUBE TECHNOLOGY",
+            "aicube_technology": "AICUBE TECHNOLOGY LLC",
             "powered_by": aicube_settings.AICUBE_MODELS
         }
         
