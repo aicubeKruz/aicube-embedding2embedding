@@ -9,12 +9,23 @@ import torch
 import numpy as np
 from unittest.mock import Mock, patch
 
-from aicube_app.aicube_models.aicube_embedding_translator import (
-    AICUBEEmbeddingTranslator,
-    AICUBESiLUActivation,
-    AICUBEResidualBlock,
-    AICUBEEmbeddingTranslatorEnsemble
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+
+# Import usando importlib devido aos hífens nos nomes dos arquivos
+import importlib.util
+spec = importlib.util.spec_from_file_location(
+    "aicube_embedding_translator", 
+    "/home/aicube/aicube-embedding2embedding/aicube-app/aicube-models/aicube-embedding-translator.py"
 )
+aicube_embedding_translator = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(aicube_embedding_translator)
+
+AICUBEEmbeddingTranslator = aicube_embedding_translator.AICUBEEmbeddingTranslator
+AICUBESiLUActivation = aicube_embedding_translator.AICUBESiLUActivation
+AICUBEResidualBlock = aicube_embedding_translator.AICUBEResidualBlock
+AICUBEEmbeddingTranslatorEnsemble = aicube_embedding_translator.AICUBEEmbeddingTranslatorEnsemble
 
 
 class TestAICUBESiLUActivation:

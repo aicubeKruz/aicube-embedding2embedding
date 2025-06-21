@@ -12,8 +12,31 @@ import json
 import numpy as np
 from unittest.mock import patch, MagicMock
 
-from aicube_app.aicube_main import aicube_app
-from aicube_app.aicube_core.aicube_config import aicube_settings
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+
+# Import usando importlib devido aos hífens nos nomes dos arquivos
+import importlib.util
+
+# Import da aplicação principal
+spec_main = importlib.util.spec_from_file_location(
+    "aicube_main", 
+    "/home/aicube/aicube-embedding2embedding/aicube-app/aicube-main.py"
+)
+aicube_main = importlib.util.module_from_spec(spec_main)
+spec_main.loader.exec_module(aicube_main)
+
+# Import das configurações
+spec_config = importlib.util.spec_from_file_location(
+    "aicube_config", 
+    "/home/aicube/aicube-embedding2embedding/aicube-app/aicube-core/aicube-config.py"
+)
+aicube_config = importlib.util.module_from_spec(spec_config)
+spec_config.loader.exec_module(aicube_config)
+
+aicube_app = aicube_main.aicube_app
+aicube_settings = aicube_config.aicube_settings
 
 
 @pytest.fixture
