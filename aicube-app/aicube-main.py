@@ -56,13 +56,13 @@ aicube_app = FastAPI(
     API for translating embeddings between different vector spaces of natural language models.
     
     Developed by AICUBE TECHNOLOGY using:
-    - Qube LCM Model
-    - Qube Neural Memory  
-    - Qube Agentic Workflows
-    - Qube Computer Vision
+    - FastAPI framework for high-performance REST API
+    - PyTorch for deep learning model implementation
+    - MLP architecture with residual connections
+    - Advanced neural network techniques for vector space alignment
     
     This API allows converting embeddings from a source model to a target model,
-    preserving semantic meaning through advanced vector space alignment techniques.
+    preserving semantic meaning through sophisticated machine learning algorithms.
     """,
     version=aicube_settings.API_VERSION,
     docs_url="/aicube-docs",
@@ -94,10 +94,10 @@ async def aicube_root():
         "version": aicube_settings.API_VERSION,
         "technology": "AICUBE TECHNOLOGY",
         "powered_by": [
-            "Qube LCM Model",
-            "Qube Neural Memory",
-            "Qube Agentic Workflows", 
-            "Qube Computer Vision"
+            "FastAPI",
+            "PyTorch", 
+            "MLP Neural Networks",
+            "Advanced ML Algorithms"
         ],
         "docs": "/aicube-docs",
         "health": "/api/v1/health"

@@ -9,14 +9,16 @@
 
 ## Overview
 
-The **AICUBE Embedding2Embedding API** is a service developed by **AICUBE TECHNOLOGY** that enables translation of embeddings between different vector spaces of natural language models. Using advanced technologies such as **Qube LCM Model**, **Qube Neural Memory**, **Qube Agentic Workflows**, and **Qube Computer Vision**, the API preserves semantic meaning during conversion.
+The **AICUBE Embedding2Embedding API** is a service developed by **AICUBE TECHNOLOGY** that enables translation of embeddings between different vector spaces of natural language models. The API preserves semantic meaning during conversion using advanced neural network architectures and machine learning techniques.
 
-## AICUBE Technologies Used
+## Technologies Used
 
-- **Qube LCM Model**: Advanced contextual language model
-- **Qube Neural Memory**: Neural memory system for semantic preservation
-- **Qube Agentic Workflows**: Intelligent and autonomous workflows
-- **Qube Computer Vision**: Advanced visual processing for multimodal analysis
+- **FastAPI**: High-performance web framework for building APIs
+- **PyTorch**: Deep learning framework for neural network implementation
+- **MLP Architecture**: Multi-Layer Perceptron with residual connections
+- **SiLU Activation**: Sigmoid Linear Unit for improved model performance
+- **Layer Normalization**: For training stability and convergence
+- **Structured Logging**: For comprehensive monitoring and debugging
 
 ## Key Features
 

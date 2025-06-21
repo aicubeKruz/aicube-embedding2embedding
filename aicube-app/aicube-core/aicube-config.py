@@ -65,12 +65,12 @@ class AICUBESettings(BaseSettings):
     AICUBE_TECHNOLOGY_NAME: str = Field(default="AICUBE TECHNOLOGY", description="Technology name")
     AICUBE_MODELS: List[str] = Field(
         default=[
-            "Qube LCM Model",
-            "Qube Neural Memory",
-            "Qube Agentic Workflows",
-            "Qube Computer Vision"
+            "FastAPI Framework",
+            "PyTorch Deep Learning",
+            "MLP Neural Networks",
+            "Advanced ML Algorithms"
         ],
-        description="AICUBE models used"
+        description="Technologies used in AICUBE implementation"
     )
     
     class Config:

@@ -230,7 +230,7 @@ class AICUBEEmbeddingTranslator(nn.Module):
             "source_norm": float(np.mean(np.linalg.norm(source_embeddings, axis=-1))),
             "target_norm": float(np.mean(np.linalg.norm(translated_embeddings, axis=-1))),
             "dimension_preservation": translated_embeddings.shape[-1] / source_embeddings.shape[-1],
-            "aicube_technology": "Qube LCM Model + Qube Neural Memory"
+            "aicube_technology": "PyTorch Deep Learning + MLP Neural Networks"
         }
         
         return metrics
@@ -247,7 +247,7 @@ class AICUBEEmbeddingTranslator(nn.Module):
             "total_parameters": sum(p.numel() for p in self.parameters()),
             "trainable_parameters": sum(p.numel() for p in self.parameters() if p.requires_grad),
             "device": str(next(self.parameters()).device),
-            "aicube_technology": ["Qube LCM Model", "Qube Neural Memory", "Qube Agentic Workflows", "Qube Computer Vision"],
+            "aicube_technology": ["FastAPI Framework", "PyTorch Deep Learning", "MLP Neural Networks", "Advanced ML Algorithms"],
             "aicube_version": "1.0.0-aicube"
         }
     
